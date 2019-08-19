@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		FC38133C230A7B3F009E9BDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38133B230A7B3F009E9BDA /* AppDelegate.swift */; };
-		FC38133E230A7B3F009E9BDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38133D230A7B3F009E9BDA /* ViewController.swift */; };
 		FC381341230A7B3F009E9BDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC38133F230A7B3F009E9BDA /* Main.storyboard */; };
 		FC381343230A7B3F009E9BDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC381342230A7B3F009E9BDA /* Assets.xcassets */; };
 		FC381346230A7B3F009E9BDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC381344230A7B3F009E9BDA /* LaunchScreen.storyboard */; };
+		FC38134F230A7D0F009E9BDA /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38134E230A7D0F009E9BDA /* WeatherListTableViewController.swift */; };
+		FC381351230A7D3D009E9BDA /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC381350230A7D3D009E9BDA /* AddWeatherCityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC381338230A7B3F009E9BDA /* GoodWheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC38133B230A7B3F009E9BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FC38133D230A7B3F009E9BDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC381340230A7B3F009E9BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC381342230A7B3F009E9BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC381345230A7B3F009E9BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC381347230A7B3F009E9BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC38134E230A7D0F009E9BDA /* WeatherListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewController.swift; sourceTree = "<group>"; };
+		FC381350230A7D3D009E9BDA /* AddWeatherCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWeatherCityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,23 @@
 		FC38133A230A7B3F009E9BDA /* GoodWheather */ = {
 			isa = PBXGroup;
 			children = (
+				FC38134D230A7CCE009E9BDA /* Controllers */,
 				FC38133B230A7B3F009E9BDA /* AppDelegate.swift */,
-				FC38133D230A7B3F009E9BDA /* ViewController.swift */,
 				FC38133F230A7B3F009E9BDA /* Main.storyboard */,
 				FC381342230A7B3F009E9BDA /* Assets.xcassets */,
 				FC381344230A7B3F009E9BDA /* LaunchScreen.storyboard */,
 				FC381347230A7B3F009E9BDA /* Info.plist */,
 			);
 			path = GoodWheather;
+			sourceTree = "<group>";
+		};
+		FC38134D230A7CCE009E9BDA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC38134E230A7D0F009E9BDA /* WeatherListTableViewController.swift */,
+				FC381350230A7D3D009E9BDA /* AddWeatherCityViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +146,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC38133E230A7B3F009E9BDA /* ViewController.swift in Sources */,
+				FC38134F230A7D0F009E9BDA /* WeatherListTableViewController.swift in Sources */,
+				FC381351230A7D3D009E9BDA /* AddWeatherCityViewController.swift in Sources */,
 				FC38133C230A7B3F009E9BDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
