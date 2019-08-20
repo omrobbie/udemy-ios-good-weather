@@ -25,20 +25,20 @@ class AddWeatherCityViewController: UIViewController {
 
     @IBAction func saveButton(_ sender: Any) {
         if let city = cityNameLabel.text {
-            let currentUnit = getCurrentUnit()
-            let weatherUrl = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=c2818357c736d789a6086696fc8d9b30&units=\(currentUnit)")!
-            let weatherResource = Resource<WeatherViewModel>(url: weatherUrl) { data in
-                let weatherViewModel = try? JSONDecoder().decode(WeatherViewModel.self, from: data)
-                return weatherViewModel
-            }
+            if let weatherUrl = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=c2818357c736d789a6086696fc8d9b30&units=\(getCurrentUnit())") {
+                let weatherResource = Resource<WeatherViewModel>(url: weatherUrl) { data in
+                    let weatherViewModel = try? JSONDecoder().decode(WeatherViewModel.self, from: data)
+                    return weatherViewModel
+                }
 
-            WebService().load(resource: weatherResource) { [weak self] result in
-                if let weatherViewModel = result {
-                    print(weatherViewModel)
+                WebService().load(resource: weatherResource) { [weak self] result in
+                    if let weatherViewModel = result {
+                        print(weatherViewModel)
 
-                    if let delegate = self?.delegate {
-                        delegate.addWeatherDidSave(viewModel: weatherViewModel)
-                        self?.dismiss(animated: true, completion: nil)
+                        if let delegate = self?.delegate {
+                            delegate.addWeatherDidSave(viewModel: weatherViewModel)
+                            self?.dismiss(animated: true, completion: nil)
+                        }
                     }
                 }
             }
