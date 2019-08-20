@@ -58,7 +58,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="GoodWeather" id="gF0-gW-lA2">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="QGz-uB-cLl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Settings" image="settings" id="QGz-uB-cLl"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="5va-3j-fNb">
                             <connections>
                                 <segue destination="zgI-2I-RWe" kind="presentation" id="Oqs-NQ-U2X"/>
@@ -154,4 +154,7 @@
             <point key="canvasLocation" x="1734.7826086956522" y="-34.151785714285715"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="settings" width="24" height="24"/>
+    </resources>
 </document>
