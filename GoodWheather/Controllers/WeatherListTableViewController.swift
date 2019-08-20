@@ -32,7 +32,15 @@ class WeatherListTableViewController: UITableViewController {
             addWeatherCityViewController.delegate = self
 
         case "SettingsTableViewController":
-            break
+            guard let nav = segue.destination as? UINavigationController else {
+                fatalError("Navigation Controller not found!")
+            }
+
+            guard let settingsTableViewController = nav.viewControllers.first as? SettingsTableViewController else {
+                fatalError("Settings Table View Controller not found!")
+            }
+
+            settingsTableViewController.delegate = self
 
         default:
             break
@@ -66,5 +74,12 @@ extension WeatherListTableViewController: AddWeatherDelegate {
     func addWeatherDidSave(viewModel: WeatherViewModel) {
         weatherListViewModel.addWeatherModel(viewModel)
         tableView.reloadData()
+    }
+}
+
+extension WeatherListTableViewController: SettingsDelegate {
+
+    func settingsDone(viewModel: SettingsViewModel) {
+        print("Setting Done")
     }
 }
