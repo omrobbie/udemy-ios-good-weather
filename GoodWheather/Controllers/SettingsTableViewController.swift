@@ -19,8 +19,14 @@ class SettingsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.visibleCells.forEach { cell in
+            cell.accessoryType = .none
+        }
+
         if let cell = tableView.cellForRow(at: indexPath) {
             cell.accessoryType = .checkmark
+            let unit = Unit.allCases[indexPath.row]
+            settingsViewModel.selectedUnit = unit
         }
     }
 
@@ -43,6 +49,10 @@ class SettingsTableViewController: UITableViewController {
         let item = settingsViewModel.units[indexPath.row]
 
         cell.textLabel?.text = item.displayName
+
+        if item == settingsViewModel.selectedUnit {
+            cell.accessoryType = .checkmark
+        }
 
         return cell
     }
