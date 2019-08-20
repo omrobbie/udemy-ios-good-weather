@@ -26,6 +26,16 @@ extension Unit {
     }
 }
 
+func getCurrentUnit() -> String {
+    let userDefaults = UserDefaults.standard
+
+    if let value = userDefaults.value(forKey: "unit") as? String {
+        return value
+    }
+
+    return ""
+}
+
 struct SettingsViewModel {
 
     let units = Unit.allCases
