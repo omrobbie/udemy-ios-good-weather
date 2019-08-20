@@ -16,6 +16,18 @@ class WeatherListTableViewController: UITableViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let nav = segue.destination as? UINavigationController else {
+            fatalError("Navigation Controller not found!")
+        }
+
+        guard let addWeatherCityViewController = nav.viewControllers.first as? AddWeatherCityViewController else {
+            fatalError("Add Weather City View Controller not found!")
+        }
+
+        addWeatherCityViewController.delegate = self
+    }
+
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -35,5 +47,12 @@ class WeatherListTableViewController: UITableViewController {
         cell.temperatureLabel.text = "17°"
 
         return cell
+    }
+}
+
+extension WeatherListTableViewController: AddWeatherDelegate {
+
+    func addWeatherDidSave(viewModel: WeatherViewModel) {
+        print(viewModel.name)
     }
 }

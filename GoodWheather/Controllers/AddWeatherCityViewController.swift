@@ -25,7 +25,7 @@ class AddWeatherCityViewController: UIViewController {
 
     @IBAction func saveButton(_ sender: Any) {
         if let city = cityNameLabel.text {
-            let weatherUrl = URL(string: "https://samples.openweathermap.org/data/2.5/weather?q=\(city)&appid=b6907d289e10d714a6e88b30761fae22")!
+            let weatherUrl = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=c2818357c736d789a6086696fc8d9b30")!
             let weatherResource = Resource<WeatherViewModel>(url: weatherUrl) { data in
                 let weatherViewModel = try? JSONDecoder().decode(WeatherViewModel.self, from: data)
                 return weatherViewModel
