@@ -9,7 +9,7 @@
 import Foundation
 
 enum Unit: String, CaseIterable {
-    case celcius = "metric"
+    case celsius = "metric"
     case fahrenheit = "imperial"
 }
 
@@ -17,8 +17,8 @@ extension Unit {
     var displayName: String {
         get {
             switch self {
-            case .celcius:
-                return "Celcius"
+            case .celsius:
+                return "Celsius"
             case .fahrenheit:
                 return "Fahrenheit"
             }

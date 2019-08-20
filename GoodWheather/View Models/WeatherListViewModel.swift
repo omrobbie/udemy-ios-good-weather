@@ -25,7 +25,7 @@ struct WeatherListViewModel {
 
     mutating func updateUnit(to unit: Unit) {
         switch unit {
-        case .celcius:
+        case .celsius:
             weatherViewModels = weatherViewModels.map { viewModel in
                 var weatherModel = viewModel
                 weatherModel.currentTemperature.temperature = (weatherModel.currentTemperature.temperature - 32) * (5/9)
