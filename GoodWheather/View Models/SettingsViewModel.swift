@@ -14,14 +14,15 @@ enum Unit: String, CaseIterable {
 }
 
 extension Unit {
+    var name: String {
+        get {
+            return String(describing: self)
+        }
+    }
+
     var displayName: String {
         get {
-            switch self {
-            case .celsius:
-                return "Celsius"
-            case .fahrenheit:
-                return "Fahrenheit"
-            }
+            return self.name.capitalized
         }
     }
 }
