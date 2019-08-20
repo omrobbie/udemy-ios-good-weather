@@ -13,4 +13,9 @@ class WeatherCell: UITableViewCell {
 
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
+
+    func configure(_ viewModel: WeatherViewModel) {
+        cityNameLabel.text = viewModel.name
+        temperatureLabel.text = "\(viewModel.currentTemperature.temperature)°"
+    }
 }
