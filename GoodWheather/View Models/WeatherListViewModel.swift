@@ -8,13 +8,17 @@
 
 import Foundation
 
-struct WeatherViewModel {
+struct WeatherListViewModel {
+    private var weatherViewModels = [WeatherViewModel]()
+}
+
+struct WeatherViewModel: Decodable {
     let name: String
+    let main: TemperatureViewModel
+}
+
+struct TemperatureViewModel: Decodable {
     let temperature: Double
     let temperatureMin: Double
     let temperatureMax: Double
-}
-
-struct WeatherListViewModel {
-    private var weatherViewModels = [WeatherViewModel]()
 }
