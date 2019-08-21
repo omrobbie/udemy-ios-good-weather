@@ -20,12 +20,20 @@ class WeatherDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViewModelBindings()
+    }
 
-        if let weatherViewModel = weatherViewModel {
-            cityNameLabel.text = weatherViewModel.name.value
-            currentTempLabel.text = weatherViewModel.currentTemperature.temperature.value.formatAsDegree
-            maxTempLabel.text = weatherViewModel.currentTemperature.temperatureMax.value.formatAsDegree
-            minTempLabel.text = weatherViewModel.currentTemperature.temperatureMin.value.formatAsDegree
+    private func setupViewModelBindings() {
+        if let viewModel = weatherViewModel {
+            viewModel.name.bind { self.cityNameLabel.text = $0 }
+            viewModel.currentTemperature.temperature.bind { self.currentTempLabel.text = "\($0.formatAsDegree)°" }
+            viewModel.currentTemperature.temperatureMin.bind { self.minTempLabel.text = "\($0.formatAsDegree)°" }
+            viewModel.currentTemperature.temperatureMax.bind { self.maxTempLabel.text = "\($0.formatAsDegree)°" }
+        }
+
+        // display title after few seconds
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.navigationItem.title = "Weather Details"
         }
     }
 }
