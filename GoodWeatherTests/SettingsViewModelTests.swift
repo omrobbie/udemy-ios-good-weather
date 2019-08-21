@@ -26,4 +26,18 @@ class SettingsViewModelTests: XCTestCase {
     func test_should_return_correct_display_name_for_fahrenheit() {
         XCTAssertEqual(settingsViewModel.selectedUnit.displayName, "Fahrenheit")
     }
+
+    func test_should_be_able_to_save_user_unit_selection() {
+        settingsViewModel.selectedUnit = .celsius
+
+        let userDefaults = UserDefaults.standard
+        XCTAssertNotNil(userDefaults.value(forKey: "unit"))
+    }
+
+    override func tearDown() {
+        super.tearDown()
+
+        let userDefaults = UserDefaults.standard
+        userDefaults.removeObject(forKey: "unit")
+    }
 }
