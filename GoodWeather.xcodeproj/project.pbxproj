@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FC381338230A7B3F009E9BDA /* GoodWheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC381338230A7B3F009E9BDA /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC38133B230A7B3F009E9BDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC381340230A7B3F009E9BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC381342230A7B3F009E9BDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		FCB709FB230D11F90053F395 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
-		FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWheatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB70A31230D3B3F0053F395 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWheatherTests.swift; sourceTree = "<group>"; };
 		FCB70A35230D3B400053F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +83,8 @@
 		FC38132F230A7B3F009E9BDA = {
 			isa = PBXGroup;
 			children = (
-				FC38133A230A7B3F009E9BDA /* GoodWheather */,
-				FCB70A32230D3B400053F395 /* GoodWheatherTests */,
+				FC38133A230A7B3F009E9BDA /* GoodWeather */,
+				FCB70A32230D3B400053F395 /* GoodWeatherTests */,
 				FC381339230A7B3F009E9BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,13 +92,13 @@
 		FC381339230A7B3F009E9BDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FC381338230A7B3F009E9BDA /* GoodWheather.app */,
-				FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */,
+				FC381338230A7B3F009E9BDA /* GoodWeather.app */,
+				FCB70A31230D3B3F0053F395 /* GoodWeatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FC38133A230A7B3F009E9BDA /* GoodWheather */ = {
+		FC38133A230A7B3F009E9BDA /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
 				FCB709FA230D11EA0053F395 /* Data Sources */,
@@ -114,7 +114,7 @@
 				FC381344230A7B3F009E9BDA /* LaunchScreen.storyboard */,
 				FC381347230A7B3F009E9BDA /* Info.plist */,
 			);
-			path = GoodWheather;
+			path = GoodWeather;
 			sourceTree = "<group>";
 		};
 		FC38134D230A7CCE009E9BDA /* Controllers */ = {
@@ -179,21 +179,21 @@
 			path = "Data Sources";
 			sourceTree = "<group>";
 		};
-		FCB70A32230D3B400053F395 /* GoodWheatherTests */ = {
+		FCB70A32230D3B400053F395 /* GoodWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
 				FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */,
 				FCB70A35230D3B400053F395 /* Info.plist */,
 			);
-			path = GoodWheatherTests;
+			path = GoodWeatherTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FC381337230A7B3F009E9BDA /* GoodWheather */ = {
+		FC381337230A7B3F009E9BDA /* GoodWeather */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FC38134A230A7B3F009E9BDA /* Build configuration list for PBXNativeTarget "GoodWheather" */;
+			buildConfigurationList = FC38134A230A7B3F009E9BDA /* Build configuration list for PBXNativeTarget "GoodWeather" */;
 			buildPhases = (
 				FC381334230A7B3F009E9BDA /* Sources */,
 				FC381335230A7B3F009E9BDA /* Frameworks */,
@@ -203,14 +203,14 @@
 			);
 			dependencies = (
 			);
-			name = GoodWheather;
+			name = GoodWeather;
 			productName = GoodWheather;
-			productReference = FC381338230A7B3F009E9BDA /* GoodWheather.app */;
+			productReference = FC381338230A7B3F009E9BDA /* GoodWeather.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FCB70A30230D3B3F0053F395 /* GoodWheatherTests */ = {
+		FCB70A30230D3B3F0053F395 /* GoodWeatherTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWheatherTests" */;
+			buildConfigurationList = FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */;
 			buildPhases = (
 				FCB70A2D230D3B3F0053F395 /* Sources */,
 				FCB70A2E230D3B3F0053F395 /* Frameworks */,
@@ -221,9 +221,9 @@
 			dependencies = (
 				FCB70A37230D3B400053F395 /* PBXTargetDependency */,
 			);
-			name = GoodWheatherTests;
+			name = GoodWeatherTests;
 			productName = GoodWheatherTests;
-			productReference = FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */;
+			productReference = FCB70A31230D3B3F0053F395 /* GoodWeatherTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FC381333230A7B3F009E9BDA /* Build configuration list for PBXProject "GoodWheather" */;
+			buildConfigurationList = FC381333230A7B3F009E9BDA /* Build configuration list for PBXProject "GoodWeather" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -258,8 +258,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FC381337230A7B3F009E9BDA /* GoodWheather */,
-				FCB70A30230D3B3F0053F395 /* GoodWheatherTests */,
+				FC381337230A7B3F009E9BDA /* GoodWeather */,
+				FCB70A30230D3B3F0053F395 /* GoodWeatherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -319,7 +319,7 @@
 /* Begin PBXTargetDependency section */
 		FCB70A37230D3B400053F395 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = FC381337230A7B3F009E9BDA /* GoodWheather */;
+			target = FC381337230A7B3F009E9BDA /* GoodWeather */;
 			targetProxy = FCB70A36230D3B400053F395 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,12 +466,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
-				INFOPLIST_FILE = GoodWheather/Info.plist;
+				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,12 +484,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
-				INFOPLIST_FILE = GoodWheather/Info.plist;
+				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,17 +502,17 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
-				INFOPLIST_FILE = GoodWheatherTests/Info.plist;
+				INFOPLIST_FILE = GoodWeatherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheatherTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWheather.app/GoodWheather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/GoodWeather";
 			};
 			name = Debug;
 		};
@@ -522,24 +522,24 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
-				INFOPLIST_FILE = GoodWheatherTests/Info.plist;
+				INFOPLIST_FILE = GoodWeatherTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheatherTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWheather.app/GoodWheather";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/GoodWeather";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FC381333230A7B3F009E9BDA /* Build configuration list for PBXProject "GoodWheather" */ = {
+		FC381333230A7B3F009E9BDA /* Build configuration list for PBXProject "GoodWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC381348230A7B3F009E9BDA /* Debug */,
@@ -548,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FC38134A230A7B3F009E9BDA /* Build configuration list for PBXNativeTarget "GoodWheather" */ = {
+		FC38134A230A7B3F009E9BDA /* Build configuration list for PBXNativeTarget "GoodWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FC38134B230A7B3F009E9BDA /* Debug */,
@@ -557,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWheatherTests" */ = {
+		FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWeatherTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FCB70A38230D3B400053F395 /* Debug */,

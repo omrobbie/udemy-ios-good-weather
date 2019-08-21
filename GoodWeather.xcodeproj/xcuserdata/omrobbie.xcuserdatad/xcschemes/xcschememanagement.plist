@@ -6,8 +6,23 @@
 	<dict>
 		<key>GoodWheather.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FC381337230A7B3F009E9BDA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FCB70A30230D3B3F0053F395</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
