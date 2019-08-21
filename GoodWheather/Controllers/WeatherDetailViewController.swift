@@ -22,10 +22,10 @@ class WeatherDetailViewController: UIViewController {
         super.viewDidLoad()
 
         if let weatherViewModel = weatherViewModel {
-            cityNameLabel.text = weatherViewModel.name
-            currentTempLabel.text = weatherViewModel.currentTemperature.temperature.formatAsDegree
-            maxTempLabel.text = weatherViewModel.currentTemperature.temperatureMax.formatAsDegree
-            minTempLabel.text = weatherViewModel.currentTemperature.temperatureMin.formatAsDegree
+            cityNameLabel.text = weatherViewModel.name.value
+            currentTempLabel.text = weatherViewModel.currentTemperature.temperature.value.formatAsDegree
+            maxTempLabel.text = weatherViewModel.currentTemperature.temperatureMax.value.formatAsDegree
+            minTempLabel.text = weatherViewModel.currentTemperature.temperatureMin.value.formatAsDegree
         }
     }
 }

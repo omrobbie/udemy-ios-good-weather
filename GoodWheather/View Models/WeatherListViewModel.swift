@@ -27,15 +27,15 @@ struct WeatherListViewModel {
         switch unit {
         case .celsius:
             weatherViewModels = weatherViewModels.map { viewModel in
-                var weatherModel = viewModel
-                weatherModel.currentTemperature.temperature = (weatherModel.currentTemperature.temperature - 32) * (5/9)
+                let weatherModel = viewModel
+                weatherModel.currentTemperature.temperature.value = (weatherModel.currentTemperature.temperature.value - 32) * (5/9)
                 return weatherModel
             }
 
         case .fahrenheit:
             weatherViewModels = weatherViewModels.map { viewModel in
-                var weatherModel = viewModel
-                weatherModel.currentTemperature.temperature = (weatherModel.currentTemperature.temperature * (9/5)) + 32
+                let weatherModel = viewModel
+                weatherModel.currentTemperature.temperature.value = (weatherModel.currentTemperature.temperature.value * (9/5)) + 32
                 return weatherModel
             }
         }
@@ -43,7 +43,7 @@ struct WeatherListViewModel {
 }
 
 struct WeatherViewModel: Decodable {
-    let name: String
+    let name: Dynamic<String>
     var currentTemperature: TemperatureViewModel
 
     private enum CodingKeys: String, CodingKey {
@@ -53,13 +53,38 @@ struct WeatherViewModel: Decodable {
 }
 
 struct TemperatureViewModel: Decodable {
-    var temperature: Double
-    let temperatureMin: Double
-    let temperatureMax: Double
+    var temperature: Dynamic<Double>
+    let temperatureMin: Dynamic<Double>
+    let temperatureMax: Dynamic<Double>
 
     private enum CodingKeys: String, CodingKey {
         case temperature = "temp"
         case temperatureMin = "temp_min"
         case temperatureMax = "temp_max"
+    }
+}
+
+class Dynamic<T>: Decodable where T: Decodable {
+    typealias Listener = (T) -> ()
+
+    var listener: Listener?
+
+    var value: T {
+        didSet {
+            listener?(value)
+        }
+    }
+
+    init(_ value: T) {
+        self.value = value
+    }
+
+    private enum CodingKeys: CodingKey {
+        case value
+    }
+
+    func bind(listener: @escaping Listener) {
+        self.listener = listener
+        self.listener?(value)
     }
 }
