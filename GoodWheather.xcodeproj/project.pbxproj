@@ -21,6 +21,7 @@
 		FC3813A1230BD92F009E9BDA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3813A0230BD92F009E9BDA /* SettingsViewModel.swift */; };
 		FCB709F3230CD7D60053F395 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F2230CD7D60053F395 /* AddCityViewModel.swift */; };
 		FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F6230CD8A30053F395 /* BindingTextField.swift */; };
+		FCB709F9230CE3A40053F395 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FC3813A0230BD92F009E9BDA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		FCB709F2230CD7D60053F395 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
 		FCB709F6230CD8A30053F395 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				FC38134E230A7D0F009E9BDA /* WeatherListTableViewController.swift */,
 				FC381350230A7D3D009E9BDA /* AddWeatherCityViewController.swift */,
 				FC38139E230BD679009E9BDA /* SettingsTableViewController.swift */,
+				FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 				FC381351230A7D3D009E9BDA /* AddWeatherCityViewController.swift in Sources */,
 				FC38139F230BD679009E9BDA /* SettingsTableViewController.swift in Sources */,
 				FCB709F3230CD7D60053F395 /* AddCityViewModel.swift in Sources */,
+				FCB709F9230CE3A40053F395 /* WeatherDetailViewController.swift in Sources */,
 				FC38139A230BBBC1009E9BDA /* WeatherListViewModel.swift in Sources */,
 				FC381397230B9FCF009E9BDA /* WebService.swift in Sources */,
 				FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */,
