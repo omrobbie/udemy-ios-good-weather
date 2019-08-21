@@ -7,27 +7,18 @@
 //
 
 import XCTest
+@testable import GoodWeather
 
 class WeatherListViewModelTests: XCTestCase {
 
+    private var weatherListViewModel: WeatherListViewModel!
+
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+        super.setUp()
+        weatherListViewModel = WeatherListViewModel()
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        weatherListViewModel.addWeatherViewModel(WeatherViewModel(name: "Houston", currentTemperature: TemperatureViewModel(temperature: 32, temperatureMin: 0, temperatureMax: 0)))
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        weatherListViewModel.addWeatherViewModel(WeatherViewModel(name: "Austin", currentTemperature: TemperatureViewModel(temperature: 72, temperatureMin: 0, temperatureMax: 0)))
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

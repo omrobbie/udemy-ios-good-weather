@@ -85,7 +85,7 @@ class WeatherListTableViewController: UITableViewController {
 extension WeatherListTableViewController: AddWeatherDelegate {
 
     func addWeatherDidSave(viewModel: WeatherViewModel) {
-        weatherListViewModel.addWeatherModel(viewModel)
+        weatherListViewModel.addWeatherViewModel(viewModel)
         datasource.updateItems(weatherListViewModel.weatherViewModels)
         tableView.reloadData()
     }
