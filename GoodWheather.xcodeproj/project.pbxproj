@@ -23,6 +23,7 @@
 		FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F6230CD8A30053F395 /* BindingTextField.swift */; };
 		FCB709F9230CE3A40053F395 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */; };
 		FCB709FC230D11F90053F395 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FB230D11F90053F395 /* WeatherDataSource.swift */; };
+		FCB709FE230D17DB0053F395 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FCB709F6230CD8A30053F395 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		FCB709FB230D11F90053F395 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
+		FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				FCB709FB230D11F90053F395 /* WeatherDataSource.swift */,
+				FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */,
 			);
 			path = "Data Sources";
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				FC381397230B9FCF009E9BDA /* WebService.swift in Sources */,
 				FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */,
 				FC38133C230A7B3F009E9BDA /* AppDelegate.swift in Sources */,
+				FCB709FE230D17DB0053F395 /* TableViewDataSource.swift in Sources */,
 				FC3813A1230BD92F009E9BDA /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
