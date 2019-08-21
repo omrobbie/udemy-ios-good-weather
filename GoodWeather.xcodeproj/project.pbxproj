@@ -25,6 +25,7 @@
 		FCB709FC230D11F90053F395 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FB230D11F90053F395 /* WeatherDataSource.swift */; };
 		FCB709FE230D17DB0053F395 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */; };
 		FCB70A40230D46CB0053F395 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */; };
+		FCB70A42230D4DE10053F395 /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70A41230D4DE10053F395 /* WeatherListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		FCB70A31230D3B3F0053F395 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCB70A35230D3B400053F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
+		FCB70A41230D4DE10053F395 /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 			children = (
 				FCB70A35230D3B400053F395 /* Info.plist */,
 				FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */,
+				FCB70A41230D4DE10053F395 /* WeatherListViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FCB70A40230D46CB0053F395 /* SettingsViewModelTests.swift in Sources */,
+				FCB70A42230D4DE10053F395 /* WeatherListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
