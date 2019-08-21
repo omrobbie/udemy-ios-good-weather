@@ -41,4 +41,8 @@ class TableViewDataSource<CellType, ViewModel>: NSObject, UITableViewDataSource 
 
         return cell
     }
+
+    func updateItems(_ items: [ViewModel]) {
+        self.items = items
+    }
 }
