@@ -24,11 +24,24 @@ class WeatherDetailViewController: UIViewController {
     }
 
     private func setupViewModelBindings() {
+        var unit: String {
+            get {
+                switch getCurrentUnit() {
+                case "imperial":
+                    return "f"
+                case "metric":
+                    return "c"
+                default:
+                    return ""
+                }
+            }
+        }
+
         if let viewModel = weatherViewModel {
             viewModel.name.bind { self.cityNameLabel.text = $0 }
-            viewModel.currentTemperature.temperature.bind { self.currentTempLabel.text = "\($0.formatAsDegree)°" }
-            viewModel.currentTemperature.temperatureMin.bind { self.minTempLabel.text = "\($0.formatAsDegree)°" }
-            viewModel.currentTemperature.temperatureMax.bind { self.maxTempLabel.text = "\($0.formatAsDegree)°" }
+            viewModel.currentTemperature.temperature.bind { self.currentTempLabel.text = "\($0.formatAsDegree)°\(unit)" }
+            viewModel.currentTemperature.temperatureMin.bind { self.minTempLabel.text = "\($0.formatAsDegree)°\(unit)" }
+            viewModel.currentTemperature.temperatureMax.bind { self.maxTempLabel.text = "\($0.formatAsDegree)°\(unit)" }
         }
 
         // display title after few seconds

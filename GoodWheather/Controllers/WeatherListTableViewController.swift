@@ -19,7 +19,7 @@ class WeatherListTableViewController: UITableViewController {
 
         navigationController?.navigationBar.prefersLargeTitles = true
         datasource = TableViewDataSource(cellIdentifier: "WeatherCell", items: weatherListViewModel.weatherViewModels, configureCell: { (cell, viewModel) in
-            cell.cityNameLabel.text = "\(viewModel.name.value)°"
+            cell.cityNameLabel.text = "\(viewModel.name.value)"
             cell.temperatureLabel.text = "\(viewModel.currentTemperature.temperature.value.formatAsDegree)°"
         })
         tableView.dataSource = datasource
