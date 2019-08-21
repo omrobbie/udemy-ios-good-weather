@@ -117,14 +117,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOK-ir-kdN">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOK-ir-kdN">
                                 <rect key="frame" x="20" y="106" width="374" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rga-On-rcG">
+                                <rect key="frame" x="20" y="144" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p65-KZ-YJo">
+                                <rect key="frame" x="20" y="182" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQc-T7-1yi">
-                                <rect key="frame" x="190" y="144" width="34" height="30"/>
+                                <rect key="frame" x="190" y="247" width="34" height="30"/>
                                 <state key="normal" title="Save"/>
                                 <connections>
                                     <action selector="saveButton:" destination="N1y-et-Puo" eventType="touchUpInside" id="fa4-BV-kiz"/>
@@ -133,11 +145,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FOK-ir-kdN" firstAttribute="top" secondItem="eUA-5n-o3I" secondAttribute="top" constant="18" id="Itt-nm-YEa"/>
-                            <constraint firstItem="FOK-ir-kdN" firstAttribute="centerX" secondItem="jQc-T7-1yi" secondAttribute="centerX" id="JfE-Ww-5Ju"/>
-                            <constraint firstItem="FOK-ir-kdN" firstAttribute="trailing" secondItem="5Er-3C-VXn" secondAttribute="trailingMargin" id="K7X-dt-RC8"/>
-                            <constraint firstItem="jQc-T7-1yi" firstAttribute="top" secondItem="FOK-ir-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="ZGF-cY-Ht5"/>
-                            <constraint firstItem="FOK-ir-kdN" firstAttribute="leading" secondItem="5Er-3C-VXn" secondAttribute="leadingMargin" id="c1O-yH-Or9"/>
+                            <constraint firstItem="FOK-ir-kdN" firstAttribute="top" secondItem="eUA-5n-o3I" secondAttribute="top" constant="18" id="6iI-7Z-0ZM"/>
+                            <constraint firstItem="p65-KZ-YJo" firstAttribute="centerX" secondItem="jQc-T7-1yi" secondAttribute="centerX" id="87u-TU-kJN"/>
+                            <constraint firstItem="p65-KZ-YJo" firstAttribute="top" secondItem="Rga-On-rcG" secondAttribute="bottom" constant="8" symbolic="YES" id="9eH-ZV-aSw"/>
+                            <constraint firstItem="Rga-On-rcG" firstAttribute="top" secondItem="FOK-ir-kdN" secondAttribute="bottom" constant="8" symbolic="YES" id="FO5-H2-rpt"/>
+                            <constraint firstItem="FOK-ir-kdN" firstAttribute="trailing" secondItem="Rga-On-rcG" secondAttribute="trailing" id="Fq7-1a-IBP"/>
+                            <constraint firstItem="jQc-T7-1yi" firstAttribute="top" secondItem="p65-KZ-YJo" secondAttribute="bottom" constant="35" id="Hhh-Cr-La3"/>
+                            <constraint firstItem="FOK-ir-kdN" firstAttribute="trailing" secondItem="5Er-3C-VXn" secondAttribute="trailingMargin" id="IRK-vL-mpz"/>
+                            <constraint firstItem="FOK-ir-kdN" firstAttribute="leading" secondItem="Rga-On-rcG" secondAttribute="leading" id="chE-lx-SEH"/>
+                            <constraint firstItem="FOK-ir-kdN" firstAttribute="leading" secondItem="5Er-3C-VXn" secondAttribute="leadingMargin" id="kml-r7-RxR"/>
+                            <constraint firstItem="Rga-On-rcG" firstAttribute="trailing" secondItem="p65-KZ-YJo" secondAttribute="trailing" id="vrf-D6-npa"/>
+                            <constraint firstItem="Rga-On-rcG" firstAttribute="leading" secondItem="p65-KZ-YJo" secondAttribute="leading" id="yT3-dV-MtW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eUA-5n-o3I"/>
                     </view>
@@ -150,11 +168,13 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityNameLabel" destination="FOK-ir-kdN" id="10W-wC-rBv"/>
+                        <outlet property="stateLabel" destination="Rga-On-rcG" id="pFP-yo-hzW"/>
+                        <outlet property="zipCodeLabel" destination="p65-KZ-YJo" id="WbN-I4-son"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdx-Ms-UmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2629" y="325"/>
+            <point key="canvasLocation" x="2628.985507246377" y="324.77678571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Gd-P7-WC2">
