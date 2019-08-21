@@ -42,6 +42,16 @@ class WeatherListTableViewController: UITableViewController {
 
             settingsTableViewController.delegate = self
 
+        case "WeatherDetailViewController":
+            guard let weatherDetailViewController = segue.destination as? WeatherDetailViewController,
+            let indexPath = tableView.indexPathForSelectedRow else {
+                return
+            }
+
+            let weatherViewModel = weatherListViewModel.modelAt(indexPath.row)
+
+            weatherDetailViewController.weatherViewModel = weatherViewModel
+
         default:
             break
         }
