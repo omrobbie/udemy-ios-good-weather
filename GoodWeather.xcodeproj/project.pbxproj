@@ -24,7 +24,7 @@
 		FCB709F9230CE3A40053F395 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */; };
 		FCB709FC230D11F90053F395 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FB230D11F90053F395 /* WeatherDataSource.swift */; };
 		FCB709FE230D17DB0053F395 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */; };
-		FCB70A34230D3B400053F395 /* GoodWheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */; };
+		FCB70A40230D46CB0053F395 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +58,8 @@
 		FCB709FB230D11F90053F395 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		FCB70A31230D3B3F0053F395 /* GoodWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWheatherTests.swift; sourceTree = "<group>"; };
 		FCB70A35230D3B400053F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +182,8 @@
 		FCB70A32230D3B400053F395 /* GoodWeatherTests */ = {
 			isa = PBXGroup;
 			children = (
-				FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */,
 				FCB70A35230D3B400053F395 /* Info.plist */,
+				FCB70A3F230D46CB0053F395 /* SettingsViewModelTests.swift */,
 			);
 			path = GoodWeatherTests;
 			sourceTree = "<group>";
@@ -241,6 +241,7 @@
 					};
 					FCB70A30230D3B3F0053F395 = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 						TestTargetID = FC381337230A7B3F009E9BDA;
 					};
 				};
@@ -310,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCB70A34230D3B400053F395 /* GoodWheatherTests.swift in Sources */,
+				FCB70A40230D46CB0053F395 /* SettingsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +501,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
 				INFOPLIST_FILE = GoodWeatherTests/Info.plist;
@@ -510,6 +512,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWeatherTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWeather.app/GoodWeather";
@@ -520,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3SMXMP42NY;
 				INFOPLIST_FILE = GoodWeatherTests/Info.plist;

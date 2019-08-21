@@ -1,6 +1,6 @@
 //
-//  GoodWheatherTests.swift
-//  GoodWheatherTests
+//  SettingsViewModelTests.swift
+//  GoodWeatherTests
 //
 //  Created by omrobbie on 21/08/19.
 //  Copyright © 2019 omrobbie. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class GoodWheatherTests: XCTestCase {
+class SettingsViewModelTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
