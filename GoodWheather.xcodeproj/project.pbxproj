@@ -24,7 +24,18 @@
 		FCB709F9230CE3A40053F395 /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */; };
 		FCB709FC230D11F90053F395 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FB230D11F90053F395 /* WeatherDataSource.swift */; };
 		FCB709FE230D17DB0053F395 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */; };
+		FCB70A34230D3B400053F395 /* GoodWheatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FCB70A36230D3B400053F395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC381330230A7B3F009E9BDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC381337230A7B3F009E9BDA;
+			remoteInfo = GoodWheather;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		FC381338230A7B3F009E9BDA /* GoodWheather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWheather.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,10 +57,20 @@
 		FCB709F8230CE3A40053F395 /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
 		FCB709FB230D11F90053F395 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		FCB709FD230D17DB0053F395 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWheatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWheatherTests.swift; sourceTree = "<group>"; };
+		FCB70A35230D3B400053F395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FC381335230A7B3F009E9BDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB70A2E230D3B3F0053F395 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -63,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				FC38133A230A7B3F009E9BDA /* GoodWheather */,
+				FCB70A32230D3B400053F395 /* GoodWheatherTests */,
 				FC381339230A7B3F009E9BDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				FC381338230A7B3F009E9BDA /* GoodWheather.app */,
+				FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +179,15 @@
 			path = "Data Sources";
 			sourceTree = "<group>";
 		};
+		FCB70A32230D3B400053F395 /* GoodWheatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				FCB70A33230D3B400053F395 /* GoodWheatherTests.swift */,
+				FCB70A35230D3B400053F395 /* Info.plist */,
+			);
+			path = GoodWheatherTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -176,6 +208,24 @@
 			productReference = FC381338230A7B3F009E9BDA /* GoodWheather.app */;
 			productType = "com.apple.product-type.application";
 		};
+		FCB70A30230D3B3F0053F395 /* GoodWheatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWheatherTests" */;
+			buildPhases = (
+				FCB70A2D230D3B3F0053F395 /* Sources */,
+				FCB70A2E230D3B3F0053F395 /* Frameworks */,
+				FCB70A2F230D3B3F0053F395 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCB70A37230D3B400053F395 /* PBXTargetDependency */,
+			);
+			name = GoodWheatherTests;
+			productName = GoodWheatherTests;
+			productReference = FCB70A31230D3B3F0053F395 /* GoodWheatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -188,6 +238,10 @@
 				TargetAttributes = {
 					FC381337230A7B3F009E9BDA = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					FCB70A30230D3B3F0053F395 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = FC381337230A7B3F009E9BDA;
 					};
 				};
 			};
@@ -205,6 +259,7 @@
 			projectRoot = "";
 			targets = (
 				FC381337230A7B3F009E9BDA /* GoodWheather */,
+				FCB70A30230D3B3F0053F395 /* GoodWheatherTests */,
 			);
 		};
 /* End PBXProject section */
@@ -217,6 +272,13 @@
 				FC381346230A7B3F009E9BDA /* LaunchScreen.storyboard in Resources */,
 				FC381343230A7B3F009E9BDA /* Assets.xcassets in Resources */,
 				FC381341230A7B3F009E9BDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCB70A2F230D3B3F0053F395 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +306,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FCB70A2D230D3B3F0053F395 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB70A34230D3B400053F395 /* GoodWheatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FCB70A37230D3B400053F395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC381337230A7B3F009E9BDA /* GoodWheather */;
+			targetProxy = FCB70A36230D3B400053F395 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FC38133F230A7B3F009E9BDA /* Main.storyboard */ = {
@@ -418,6 +496,46 @@
 			};
 			name = Release;
 		};
+		FCB70A38230D3B400053F395 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SMXMP42NY;
+				INFOPLIST_FILE = GoodWheatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWheather.app/GoodWheather";
+			};
+			name = Debug;
+		};
+		FCB70A39230D3B400053F395 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3SMXMP42NY;
+				INFOPLIST_FILE = GoodWheatherTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.omrobbie.GoodWheatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoodWheather.app/GoodWheather";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -435,6 +553,15 @@
 			buildConfigurations = (
 				FC38134B230A7B3F009E9BDA /* Debug */,
 				FC38134C230A7B3F009E9BDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCB70A3A230D3B400053F395 /* Build configuration list for PBXNativeTarget "GoodWheatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCB70A38230D3B400053F395 /* Debug */,
+				FCB70A39230D3B400053F395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
