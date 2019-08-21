@@ -167,9 +167,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cityNameLabel" destination="FOK-ir-kdN" id="10W-wC-rBv"/>
-                        <outlet property="stateLabel" destination="Rga-On-rcG" id="pFP-yo-hzW"/>
-                        <outlet property="zipCodeLabel" destination="p65-KZ-YJo" id="WbN-I4-son"/>
+                        <outlet property="cityNameTextField" destination="FOK-ir-kdN" id="10W-wC-rBv"/>
+                        <outlet property="stateTextField" destination="Rga-On-rcG" id="pFP-yo-hzW"/>
+                        <outlet property="zipCodeTextField" destination="p65-KZ-YJo" id="WbN-I4-son"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kdx-Ms-UmM" userLabel="First Responder" sceneMemberID="firstResponder"/>

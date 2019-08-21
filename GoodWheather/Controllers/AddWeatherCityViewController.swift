@@ -15,9 +15,9 @@ protocol AddWeatherDelegate {
 
 class AddWeatherCityViewController: UIViewController {
 
-    @IBOutlet weak var cityNameLabel: UITextField!
-    @IBOutlet weak var stateLabel: UITextField!
-    @IBOutlet weak var zipCodeLabel: UITextField!
+    @IBOutlet weak var cityNameTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var zipCodeTextField: UITextField!
     
     var delegate: AddWeatherDelegate?
 
@@ -26,7 +26,7 @@ class AddWeatherCityViewController: UIViewController {
     }
 
     @IBAction func saveButton(_ sender: Any) {
-        if let city = cityNameLabel.text {
+        if let city = cityNameTextField.text {
             if let weatherUrl = URL(string: "https://api.openweathermap.org/data/2.5/weather?q=\(city)&appid=c2818357c736d789a6086696fc8d9b30&units=\(getCurrentUnit())") {
                 let weatherResource = Resource<WeatherViewModel>(url: weatherUrl) { data in
                     let weatherViewModel = try? JSONDecoder().decode(WeatherViewModel.self, from: data)
