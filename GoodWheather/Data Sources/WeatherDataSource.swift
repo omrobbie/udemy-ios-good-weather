@@ -15,8 +15,12 @@ class WeatherDataSource: NSObject, UITableViewDataSource {
 
     private var weatherListViewModel: WeatherListViewModel
 
-    init(weatherListViewModel: WeatherListViewModel) {
+    init(_ weatherListViewModel: WeatherListViewModel) {
         self.weatherListViewModel = weatherListViewModel
+    }
+
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

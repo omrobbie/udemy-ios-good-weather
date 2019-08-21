@@ -12,10 +12,14 @@ import UIKit
 class WeatherListTableViewController: UITableViewController {
 
     private var weatherListViewModel = WeatherListViewModel()
+    private var datasource: WeatherDataSource?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         navigationController?.navigationBar.prefersLargeTitles = true
+        datasource = WeatherDataSource(weatherListViewModel)
+        tableView.dataSource = datasource
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -55,10 +59,6 @@ class WeatherListTableViewController: UITableViewController {
         default:
             break
         }
-    }
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
