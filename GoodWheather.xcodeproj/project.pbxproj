@@ -20,6 +20,7 @@
 		FC38139F230BD679009E9BDA /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC38139E230BD679009E9BDA /* SettingsTableViewController.swift */; };
 		FC3813A1230BD92F009E9BDA /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3813A0230BD92F009E9BDA /* SettingsViewModel.swift */; };
 		FCB709F3230CD7D60053F395 /* AddCityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F2230CD7D60053F395 /* AddCityViewModel.swift */; };
+		FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB709F6230CD8A30053F395 /* BindingTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		FC38139E230BD679009E9BDA /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FC3813A0230BD92F009E9BDA /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		FCB709F2230CD7D60053F395 /* AddCityViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCityViewModel.swift; sourceTree = "<group>"; };
+		FCB709F6230CD8A30053F395 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		FC38133A230A7B3F009E9BDA /* GoodWheather */ = {
 			isa = PBXGroup;
 			children = (
+				FCB709F5230CD8870053F395 /* Custom Controls */,
 				FC38139B230BCBE2009E9BDA /* Extensions */,
 				FC381398230BBBAE009E9BDA /* View Models */,
 				FC381395230B9FC4009E9BDA /* Services */,
@@ -126,6 +129,14 @@
 				FC38139C230BCC23009E9BDA /* Double+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FCB709F5230CD8870053F395 /* Custom Controls */ = {
+			isa = PBXGroup;
+			children = (
+				FCB709F6230CD8A30053F395 /* BindingTextField.swift */,
+			);
+			path = "Custom Controls";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				FCB709F3230CD7D60053F395 /* AddCityViewModel.swift in Sources */,
 				FC38139A230BBBC1009E9BDA /* WeatherListViewModel.swift in Sources */,
 				FC381397230B9FCF009E9BDA /* WebService.swift in Sources */,
+				FCB709F7230CD8A30053F395 /* BindingTextField.swift in Sources */,
 				FC38133C230A7B3F009E9BDA /* AppDelegate.swift in Sources */,
 				FC3813A1230BD92F009E9BDA /* SettingsViewModel.swift in Sources */,
 			);
